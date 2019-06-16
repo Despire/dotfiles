@@ -1,5 +1,3 @@
 # dotfiles
-My personal dotfiles
-
-dotfiles for:
+My personal dotfiles for:
   1. vim
