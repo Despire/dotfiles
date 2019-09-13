@@ -29,6 +29,10 @@ set smartcase
 set autoindent
 set smarttab
 
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
 set noerrorbells                " No beeps
 
 " open help vertically
@@ -46,15 +50,6 @@ Plug 'micha/vim-colors-solarized'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-" Code completition
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
-Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'}
 call plug#end()
 
 " Configure plugin after they are loaded !
@@ -72,49 +67,19 @@ colorscheme solarized
 
 " map ,nt to toggle NerdTree
 :nnoremap <leader>nt :NERDTree<CR>
+
 " map switch tab left to ,<S-{>
-:nnoremap <leader>{ <C-w>h
+:nnoremap <leader>{ gT<CR>
 " map switch tab right to ,<S-}>
-:nnoremap <leader>} <C-w>l
+:nnoremap <leader>} gt<CR>
 
-:nnoremap <leader>q gT<CR>
-:nnoremap <leader>e gt<CR>
-
-"Python 3 interpreter to satisfy Deoplete
-let g:python3_host_prog='/usr/local/bin/python3'
-let g:loaded_python_provider=1
-
-"Deoplete
-let g:deoplete#enable_at_startup=1
-let g:deoplete#sources#go#gocode_binary=$GOPATH.'/bin/gocode'
-let g:deoplete#sources#go#package_dot=1
-let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']
-let g:deoplete#sources#go#pointer=1
-
-"         ,_---~~~~~----._
-"  _,,_,*^____      _____``*g*\"*,
-" / __/ /'     ^.  /      \ ^@q   f
-"[  @f | @))    |  | @))   l  0 _/
-" \`/   \~____ / __ \_____/    \
-"  |           _l__l_           I
-"  }          [______]           I
-"  ]            | | |            |
-"  ]             ~ ~             |
-"  |                            |
 "Go-vim specific
 let g:go_auto_type_info=1
-let g:deoplete#sources#go#unimported_packages=1
 let g:go_fmt_command = "goimports"
+let g:go_autodetect_gopath = 1
 
 
-
-
-
-"
-"
 "
 " 	VIM-AIRLINE
-"
-"
 let g:airline_theme='solarized'
 let g:airline#extensions#tabline#enabled = 1
