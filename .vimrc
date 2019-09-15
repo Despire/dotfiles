@@ -11,12 +11,12 @@ filetype plugin indent on
 set number
 set relativenumber
 set ruler
-set laststatus=2		" Always show status bar
-set nowrap			" disable text wrapping to enable horizontal scrolling
+set laststatus=2		        " Always show status bar
+set nowrap			            " disable text wrapping to enable horizontal scrolling
 set encoding=utf-8              " Set default encoding to UTF-8
 set backspace=indent,eol,start  " Makes backspace key more powerful.
 set showcmd                     " show me my commands !! 
-set noshowmode			" let airline display this
+set noshowmode			        " let airline display this
 
 set splitright                  " Split vertical windows right to the current windows
 set splitbelow                  " Split horizontal windows below to the current windows
@@ -35,6 +35,8 @@ set expandtab
 
 set noerrorbells                " No beeps
 
+set mouse=a
+
 " open help vertically
 command! -nargs=* -complete=help Help vertical belowright help <args>
 autocmd FileType help wincmd L
@@ -46,7 +48,7 @@ syntax enable
 " Plugins
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
-Plug 'micha/vim-colors-solarized'
+Plug 'altercation/vim-colors-solarized' 
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -58,10 +60,7 @@ call plug#end()
 set background=light
 colorscheme solarized
 
-"
 " Mappings
-"
-
 " Leader character, default is '\'
 :let mapleader = ","
 
@@ -78,8 +77,7 @@ let g:go_auto_type_info=1
 let g:go_fmt_command = "goimports"
 let g:go_autodetect_gopath = 1
 
-
-"
 " 	VIM-AIRLINE
 let g:airline_theme='solarized'
 let g:airline#extensions#tabline#enabled = 1
+
