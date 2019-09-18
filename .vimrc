@@ -52,6 +52,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
 
 " Configure plugin after they are loaded !
