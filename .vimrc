@@ -27,7 +27,6 @@ set ignorecase                  " case insensitive...
 set smartcase                   
 
 set autoindent
-set smarttab
 
 set tabstop=4
 set shiftwidth=4
