@@ -79,4 +79,3 @@ let g:go_autodetect_gopath = 1
 " 	VIM-AIRLINE
 let g:airline_theme='solarized'
 let g:airline#extensions#tabline#enabled = 1
-
