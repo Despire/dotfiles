@@ -5,7 +5,8 @@ filetype off
 filetype plugin indent on     
 
 " Completion... 
-"set completeopt=longest,menuone
+set completeopt+=menuone,noselect,noinsert
+set completeopt-=preview
 
 " Settings
 set number
@@ -48,22 +49,26 @@ syntax enable
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
 Plug 'altercation/vim-colors-solarized' 
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'ycm-core/YouCompleteMe'
 call plug#end()
 
 " Configure plugin after they are loaded !
 "
 " Colorscheme
-set background=light
+set background=dark
 let g:solarized_termtrans=1
 colorscheme solarized
 
 " Mappings
 " Leader character, default is '\'
 :let mapleader = ","
+
+" YCM remaps
+:nnoremap gd :YcmCompleter GoTo<CR>
+:nnoremap <C-T> <C-O>
 
 " map ,nt to toggle NerdTree
 :nnoremap <leader>nt :NERDTree<CR>
@@ -72,10 +77,6 @@ colorscheme solarized
 :nnoremap <leader>{ gT<CR>
 " map switch tab right to ,<S-}>
 :nnoremap <leader>} gt<CR>
-
-"Go-vim specific
-let g:go_fmt_command = "goimports"
-let g:go_autodetect_gopath = 1
 
 " 	VIM-AIRLINE
 let g:airline_theme='solarized'
