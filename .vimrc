@@ -49,18 +49,22 @@ syntax enable
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
 Plug 'altercation/vim-colors-solarized' 
+Plug 'ChrisKempson/Tomorrow-Theme'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ctrlpvim/ctrlp.vim'
+
+" set the request timeout to 30 seconds (for big file sizes...)
+" https://github.com/ycm-core/ycmd/blob/master/ycmd/completers/language_server/language_server_completer.py#L41
 Plug 'ycm-core/YouCompleteMe'
+
 call plug#end()
 
 " Configure plugin after they are loaded !
 "
 " Colorscheme
 set background=dark
-let g:solarized_termtrans=1
-colorscheme solarized
+colorscheme Tomorrow-Night
 
 " Mappings
 " Leader character, default is '\'
@@ -79,5 +83,5 @@ colorscheme solarized
 :nnoremap <leader>} gt<CR>
 
 " 	VIM-AIRLINE
-let g:airline_theme='solarized'
+let g:airline_theme='tomorrow'
 let g:airline#extensions#tabline#enabled = 1
