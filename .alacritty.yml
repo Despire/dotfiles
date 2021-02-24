@@ -32,6 +32,14 @@ colors:
     cyan:    '0x54ced6'
     white:   '0x282a2e'
 
+scrolling:
+  # Maximum number of lines in the scrollback buffer.
+  # Specifying '0' will disable scrolling.
+  history: 10000
+
+  # Scrolling distance multiplier.
+  multiplier: 3
+
 # Font configuration (changes require restart)
 font:
   # Normal (roman) font face
