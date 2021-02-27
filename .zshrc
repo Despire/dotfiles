@@ -2,14 +2,19 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/matusmrekaj/.oh-my-zsh"
+export ZSH="/Users/despire/.oh-my-zsh"
 
 # GOPATH
 export GOPATH=$HOME/go
 # GO BIN
 export PATH=$GOPATH/bin:$PATH
-# MAILCHAIN
-export PATH=$PATH:$HOME/.mailchain/bin
+# GO MODULES
+export GO111MODULE=on
+# LOCALE
+export LC_ALL=en_US.UTF-8
+
+# RUST
+export PATH=$HOME/.cargo/bin:$PATH
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -43,7 +48,7 @@ ZSH_THEME="robbyrussell"
 # DISABLE_MAGIC_FUNCTIONS=true
 
 # Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
+ DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
