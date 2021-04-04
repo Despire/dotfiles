@@ -63,8 +63,8 @@ call plug#end()
 " Configure plugin after they are loaded !
 "
 " Colorscheme
-set background=dark
-colorscheme Tomorrow-Night
+set background=light
+colorscheme solarized
 
 " Mappings
 " Leader character, default is '\'
