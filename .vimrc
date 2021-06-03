@@ -9,6 +9,10 @@ set completeopt+=menuone,noselect,noinsert
 set completeopt-=preview
 
 " Settings
+set noswapfile
+set nobackup
+set nowritebackup
+
 set number
 set relativenumber
 set ruler
@@ -53,6 +57,7 @@ Plug 'ChrisKempson/Tomorrow-Theme'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'mattn/emmet-vim'
 
 " set the request timeout to 30 seconds (for big file sizes...)
 " https://github.com/ycm-core/ycmd/blob/master/ycmd/completers/language_server/language_server_completer.py#L41
@@ -63,8 +68,8 @@ call plug#end()
 " Configure plugin after they are loaded !
 "
 " Colorscheme
-set background=light
-colorscheme solarized
+set background=dark
+colorscheme Tomorrow-Night
 
 " Mappings
 " Leader character, default is '\'

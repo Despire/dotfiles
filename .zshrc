@@ -109,7 +109,3 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# tabtab source for electron-forge package
-# uninstall by removing these lines or running `tabtab uninstall electron-forge`
-[[ -f /Users/matusmrekaj/Developer/xi-electron/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /Users/matusmrekaj/Developer/xi-electron/node_modules/tabtab/.completions/electron-forge.zsh
