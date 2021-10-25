@@ -87,6 +87,10 @@ colorscheme Tomorrow-Night
 " map switch tab right to ,<S-}>
 :nnoremap <leader>} gt<CR>
 
+" <leader><leader> toggles between buffers
+:nnoremap <leader><leader> :bn<CR>
+:nnoremap <leader>q :bd<CR>
+
 " 	VIM-AIRLINE
 let g:airline_theme='tomorrow'
 let g:airline#extensions#tabline#enabled = 1
