@@ -98,3 +98,5 @@ colorscheme Tomorrow-Night
 " 	VIM-AIRLINE
 let g:airline_theme='tomorrow'
 let g:airline#extensions#tabline#enabled = 1
+
+let g:ycm_enable_diagnostic_highlighting = 0 
