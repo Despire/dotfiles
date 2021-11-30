@@ -16,6 +16,11 @@ export LC_ALL=en_US.UTF-8
 # RUST
 export PATH=$HOME/.cargo/bin:$PATH
 
+# CARDANO
+export PATH=$HOME/.local/bin:$PATH
+export CARDANO_NODE_SOCKET_PATH=$HOME/cardano/db/node.socket
+
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -109,3 +114,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+[ -f "/Users/despire/.ghcup/env" ] && source "/Users/despire/.ghcup/env" # ghcup-env
+
+export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH"
+
+# Modify prompt to be 'λ'
+export PROMPT='%(?:%{%}λ :%{%}λ ) %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
