@@ -40,6 +40,7 @@ set expandtab
 set noerrorbells                " No beeps
 
 set mouse=a
+set ttymouse=xterm2
 
 " open help vertically
 command! -nargs=* -complete=help Help vertical belowright help <args>
