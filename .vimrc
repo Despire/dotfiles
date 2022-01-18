@@ -54,7 +54,7 @@ syntax enable
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
 Plug 'altercation/vim-colors-solarized' 
-Plug 'ChrisKempson/Tomorrow-Theme'
+Plug 'chriskempson/base16-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -70,7 +70,7 @@ call plug#end()
 "
 " Colorscheme
 set background=dark
-colorscheme Tomorrow-Night
+colorscheme base16-default-dark
 
 " Mappings
 " Leader character, default is '\'
