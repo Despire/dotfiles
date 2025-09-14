@@ -51,6 +51,7 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -59,6 +60,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
 alias vim=nvim
 [ -f "/Users/despire/.ghcup/env" ] && source "/Users/despire/.ghcup/env" # ghcup-env
 
@@ -66,4 +68,11 @@ export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
 export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 # Modify prompt to be 'λ'
-export PROMPT='%(?:%{%}λ :%{%}λ ) %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
+export PROMPT='%(?:%{%}λ :%{%}λ ) %c $(git_prompt_info)'
+
+ZSH_THEME=""
+unalias ls
+unset LSCOLORS
+unset LS_COLORS
+
+zstyle ':completion:*' list-colors

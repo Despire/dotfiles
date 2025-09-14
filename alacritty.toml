@@ -1,6 +1,12 @@
 [env]
 term = "xterm-256color"
 
+# Colors (acme) - modified.
+# Default colors
+[colors.primary]
+background =  '#ffffea'
+foreground =  '#000000'
+
 [colors.bright]
 black = "#002b36"
 blue = "#839496"
@@ -21,12 +27,8 @@ red = "#dc322f"
 white = "#eee8d5"
 yellow = "#b58900"
 
-[colors.primary]
-background = "#fdf6e3"
-foreground = "#586e75"
-
 [font]
-size = 18.0
+size = 16.0
 
 [font.bold]
 family = "Inconsolata"
@@ -52,3 +54,5 @@ y = 5
 history = 10000
 multiplier = 3
 
+[window]
+decorations = "none"

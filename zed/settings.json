@@ -1,0 +1,57 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "theme": "acme",
+  "disable_ai": true,
+  "enable_language_server": true,
+  "show_edit_predictions": false,
+  "show_completions_on_input": false,
+  "inline_code_actions": false,
+  "cursor_blink": false,
+  "vim_mode": true,
+  "ui_font_size": 14,
+  "buffer_font_size": 14,
+  "buffer_font_family": "Inconsolata",
+  "soft_wrap": "editor_width",
+  "tab_bar": {
+    "show": false,
+    "show_nav_history_buttons": false,
+    "show_tab_bar_buttons": false
+  },
+  "indent_guides": {
+    "enabled": false
+  },
+  "notification_panel": {
+    "dock": "left"
+  },
+  "features": {
+    "edit_prediction_provider": "none"
+  },
+  "git": {
+    "git_gutter": "tracked_files",
+    "inline_blame": {
+      "enabled": false
+    }
+  },
+  "scrollbar": {
+    "show": "never"
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "terminal": {
+    "dock": "right",
+    "font_family": "Inconsolata",
+    "font_size": 14
+  },
+  "gutter": {
+    "line_numbers": false
+  }
+}
